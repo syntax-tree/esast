@@ -12,7 +12,7 @@ It implements the [**unist**][unist] spec.
 
 This document may not be released.
 See [releases][] for released documents.
-The latest released version is [`0.0.0`][latest].
+The latest released version is [`1.0.0`][latest].
 
 ## Contents
 
