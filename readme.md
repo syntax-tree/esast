@@ -224,7 +224,7 @@ The initial release of this project was authored by
 
 [author]: https://wooorm.com
 
-[logo]: https://raw.githubusercontent.com/syntax-tree/esast/0000000/logo.svg?sanitize=true
+[logo]: https://raw.githubusercontent.com/syntax-tree/esast/0164416/logo.svg?sanitize=true
 
 [site]: https://unifiedjs.com
 
