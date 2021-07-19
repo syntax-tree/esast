@@ -146,6 +146,12 @@ See the [unist list of utilities][utilities] for more utilities.
     — Transform JSX to function calls
 *   [`estree-util-is-identifier-name`](https://github.com/wooorm/estree-util-is-identifier-name)
     — Check if something can be an identifier name
+*   [`estree-util-value-to-estree`](https://github.com/remcohaszing/estree-util-value-to-estree)
+    — Convert a JavaScript value to an estree expression
+*   [`estree-util-visit`](https://github.com/syntax-tree/estree-util-visit)
+    — Visit nodes
+*   [`esast-util-from-estree`](https://github.com/syntax-tree/esast-util-from-estree)
+    — Transform from estree
 
 Please use either `estree-util-` (if it works with all ESTrees, preferred)
 or `esast-util-` (if it uses on esast specific features) as a prefix.
