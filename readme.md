@@ -8,7 +8,7 @@
 
 **esast** is a specification for representing [JavaScript][] as an abstract
 [syntax tree][syntax-tree].
-It implements the [**unist**][unist] spec.
+It implements the **[unist][]** spec.
 
 This document may not be released.
 See [releases][] for released documents.
@@ -142,16 +142,22 @@ X and Y are both referenced in an array at a field on node Y.
 
 See the [unist list of utilities][utilities] for more utilities.
 
-*   [`estree-util-build-jsx`](https://github.com/wooorm/estree-util-build-jsx)
-    — Transform JSX to function calls
-*   [`estree-util-is-identifier-name`](https://github.com/wooorm/estree-util-is-identifier-name)
-    — Check if something can be an identifier name
+*   [`estree-util-attach-comments`](https://github.com/syntax-tree/estree-util-attach-comments)
+    — attach comments to estree nodes
+*   [`estree-util-build-jsx`](https://github.com/syntax-tree/estree-util-build-jsx)
+    — transform JSX to function calls
+*   [`estree-util-is-identifier-name`](https://github.com/syntax-tree/estree-util-is-identifier-name)
+    — check if something can be an identifier name
 *   [`estree-util-value-to-estree`](https://github.com/remcohaszing/estree-util-value-to-estree)
-    — Convert a JavaScript value to an estree expression
+    — convert a JavaScript value to an estree expression
+*   [`estree-util-to-js`](https://github.com/syntax-tree/estree-util-to-js)
+    — serialize as JavaScript
 *   [`estree-util-visit`](https://github.com/syntax-tree/estree-util-visit)
-    — Visit nodes
+    — visit nodes
 *   [`esast-util-from-estree`](https://github.com/syntax-tree/esast-util-from-estree)
-    — Transform from estree
+    — transform from estree
+*   [`esast-util-from-js`](https://github.com/syntax-tree/esast-util-from-js)
+    — parse from JavaScript
 
 Please use either `estree-util-` (if it works with all ESTrees, preferred)
 or `esast-util-` (if it uses on esast specific features) as a prefix.
@@ -206,7 +212,7 @@ abide by its terms.
 ## Acknowledgments
 
 The initial release of this project was authored by
-[**@wooorm**](https://github.com/wooorm).
+**[@wooorm](https://github.com/wooorm)**.
 
 ## License
 
