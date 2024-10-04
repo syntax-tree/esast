@@ -1,26 +1,26 @@
 {
-  "private": true,
-  "version": "1.0.0",
-  "description": "ecmascript abstract syntax tree",
-  "license": "MIT",
-  "keywords": [],
-  "repository": "syntax-tree/esast",
-  "bugs": "https://github.com/syntax-tree/esast/issues",
   "author": "Titus Wormer <tituswormer@gmail.com> (https://wooorm.com)",
+  "bugs": "https://github.com/syntax-tree/esast/issues",
   "contributors": [
     "Titus Wormer <tituswormer@gmail.com> (https://wooorm.com)"
   ],
+  "description": "ecmascript abstract syntax tree",
   "devDependencies": {
     "remark-cli": "^12.0.0",
     "remark-preset-wooorm": "^10.0.0"
   },
-  "scripts": {
-    "format": "remark . -qfo",
-    "test": "npm run format"
-  },
+  "keywords": [],
+  "license": "MIT",
+  "private": true,
   "remarkConfig": {
     "plugins": [
       "preset-wooorm"
     ]
-  }
+  },
+  "repository": "syntax-tree/esast",
+  "scripts": {
+    "format": "remark --frail --output --quiet -- .",
+    "test": "npm run format"
+  },
+  "version": "1.0.0"
 }
