@@ -16,22 +16,22 @@ The latest released version is [`1.0.0`][latest].
 
 ## Contents
 
-*   [Introduction](#introduction)
-    *   [Where this specification fits](#where-this-specification-fits)
-    *   [ESTree](#estree)
-*   [Nodes](#nodes)
-    *   [`Node`](#node)
-    *   [`RegExpLiteral`](#regexpliteral)
-    *   [`BigIntLiteral`](#bigintliteral)
-*   [Recommendations](#recommendations)
-*   [Glossary](#glossary)
-*   [List of utilities](#list-of-utilities)
-*   [References](#references)
-*   [Security](#security)
-*   [Related](#related)
-*   [Contribute](#contribute)
-*   [Acknowledgments](#acknowledgments)
-*   [License](#license)
+* [Introduction](#introduction)
+  * [Where this specification fits](#where-this-specification-fits)
+  * [ESTree](#estree)
+* [Nodes](#nodes)
+  * [`Node`](#node)
+  * [`RegExpLiteral`](#regexpliteral)
+  * [`BigIntLiteral`](#bigintliteral)
+* [Recommendations](#recommendations)
+* [Glossary](#glossary)
+* [List of utilities](#list-of-utilities)
+* [References](#references)
+* [Security](#security)
+* [Related](#related)
+* [Contribute](#contribute)
+* [Acknowledgments](#acknowledgments)
+* [License](#license)
 
 ## Introduction
 
@@ -64,15 +64,15 @@ throughout its ecosystem.
 
 ESTree is great but it is missing some things:
 
-*   Trees can’t be roundtripped through `JSON.parse(JSON.stringify(s))`,
-    leading to cache troubles
-*   Columns are 0-indexed, whereas most text editors display 1-indexed
-    columns, leading to a tiny discrepancy or some math to display warnings
-*   There is no recommendation for range-based positional info,
-    leading implementations to scatter them in different places
-*   There is no safe space for metadata,
-    leading implementations to scatter them in different places
-*   There are no recommendations for how to handle JSX, comments, or raw values
+* Trees can’t be roundtripped through `JSON.parse(JSON.stringify(s))`,
+  leading to cache troubles
+* Columns are 0-indexed, whereas most text editors display 1-indexed
+  columns, leading to a tiny discrepancy or some math to display warnings
+* There is no recommendation for range-based positional info,
+  leading implementations to scatter them in different places
+* There is no safe space for metadata,
+  leading implementations to scatter them in different places
+* There are no recommendations for how to handle JSX, comments, or raw values
 
 These are minor nits, which is why esast is a superset.
 
@@ -142,22 +142,22 @@ X and Y are both referenced in an array at a field on node Y.
 
 See the [unist list of utilities][utilities] for more utilities.
 
-*   [`estree-util-attach-comments`](https://github.com/syntax-tree/estree-util-attach-comments)
-    — attach comments to estree nodes
-*   [`estree-util-build-jsx`](https://github.com/syntax-tree/estree-util-build-jsx)
-    — transform JSX to function calls
-*   [`estree-util-is-identifier-name`](https://github.com/syntax-tree/estree-util-is-identifier-name)
-    — check if something can be an identifier name
-*   [`estree-util-value-to-estree`](https://github.com/remcohaszing/estree-util-value-to-estree)
-    — convert a JavaScript value to an estree expression
-*   [`estree-util-to-js`](https://github.com/syntax-tree/estree-util-to-js)
-    — serialize as JavaScript
-*   [`estree-util-visit`](https://github.com/syntax-tree/estree-util-visit)
-    — visit nodes
-*   [`esast-util-from-estree`](https://github.com/syntax-tree/esast-util-from-estree)
-    — transform from estree
-*   [`esast-util-from-js`](https://github.com/syntax-tree/esast-util-from-js)
-    — parse from JavaScript
+* [`estree-util-attach-comments`](https://github.com/syntax-tree/estree-util-attach-comments)
+  — attach comments to estree nodes
+* [`estree-util-build-jsx`](https://github.com/syntax-tree/estree-util-build-jsx)
+  — transform JSX to function calls
+* [`estree-util-is-identifier-name`](https://github.com/syntax-tree/estree-util-is-identifier-name)
+  — check if something can be an identifier name
+* [`estree-util-value-to-estree`](https://github.com/remcohaszing/estree-util-value-to-estree)
+  — convert a JavaScript value to an estree expression
+* [`estree-util-to-js`](https://github.com/syntax-tree/estree-util-to-js)
+  — serialize as JavaScript
+* [`estree-util-visit`](https://github.com/syntax-tree/estree-util-visit)
+  — visit nodes
+* [`esast-util-from-estree`](https://github.com/syntax-tree/esast-util-from-estree)
+  — transform from estree
+* [`esast-util-from-js`](https://github.com/syntax-tree/esast-util-from-js)
+  — parse from JavaScript
 
 Please use either `estree-util-` (if it works with all ESTrees, preferred)
 or `esast-util-` (if it uses on esast specific features) as a prefix.
@@ -167,20 +167,20 @@ topic on GitHub.
 
 ## References
 
-*   **unist**:
-    [Universal Syntax Tree][unist].
-    T. Wormer; et al.
-*   **JavaScript**:
-    [ECMAScript Language Specification][javascript].
-    Ecma International.
-*   **JSON**
-    [The JavaScript Object Notation (JSON) Data Interchange Format][json],
-    T. Bray.
-    IETF.
-*   **Web IDL**:
-    [Web IDL][webidl],
-    C. McCormack.
-    W3C.
+* **unist**:
+  [Universal Syntax Tree][unist].
+  T. Wormer; et al.
+* **JavaScript**:
+  [ECMAScript Language Specification][javascript].
+  Ecma International.
+* **JSON**
+  [The JavaScript Object Notation (JSON) Data Interchange Format][json],
+  T. Bray.
+  IETF.
+* **Web IDL**:
+  [Web IDL][webidl],
+  C. McCormack.
+  W3C.
 
 ## Security
 
@@ -190,10 +190,10 @@ Always be careful with user input.
 
 ## Related
 
-*   [hast](https://github.com/syntax-tree/hast) — HTML
-*   [mdast](https://github.com/syntax-tree/mdast) — Markdown
-*   [nlcst](https://github.com/syntax-tree/nlcst) — Natural language
-*   [xast](https://github.com/syntax-tree/xast) — XML
+* [hast](https://github.com/syntax-tree/hast) — HTML
+* [mdast](https://github.com/syntax-tree/mdast) — Markdown
+* [nlcst](https://github.com/syntax-tree/nlcst) — Natural language
+* [xast](https://github.com/syntax-tree/xast) — XML
 
 ## Contribute
 
